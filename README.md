@@ -31,7 +31,14 @@ En cuanto al optimizador, se utilizó `SGD` para la red neuronal con matriz de a
 c
 ## Cómo ejecutar el programa
 ***
-Para poder probar el código es necesario abrir como proyecto la carpeta ```Desafio 3``` en un compilador compatible con Python.
+Para poder probar el código es necesario abrir como proyecto la carpeta ```Desafio 3``` en un compilador compatible con Python. Además, se deben tener instaladas las siguientes librerías:
+* Keras
+* Sklearn
+* Seaborn
+* Pandas
+* Numpy
+* Matplotlib
+
 ## Video explicativo
 ***
 Para una mejor comprensión del problema y su resolución, se adjunta un video explicativo en el siguiente [link]().
@@ -44,7 +51,7 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
 | Carlos Núñez        | | | | |
-| Priscilla Riffo     | | | | |
+| Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
 2. **Integración**
 
@@ -52,7 +59,7 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
 | Carlos Núñez        | | | | |
-| Priscilla Riffo     | | | | |
+| Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
 3. **Responsabilidad**
 
@@ -60,7 +67,7 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
 | Carlos Núñez        | | | | |
-| Priscilla Riffo     | | | | |
+| Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
 4. **Contribución**
 
@@ -68,7 +75,7 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
 | Carlos Núñez        | | | | |
-| Priscilla Riffo     | | | | |
+| Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
 5. **Resolución de conflictos**
 
@@ -76,5 +83,5 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
 | Carlos Núñez        | | | | |
-| Priscilla Riffo     | | | | |
+| Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
