@@ -3,14 +3,18 @@
 1. [Descripción del problema](#descripción-del-problema)
 2. [Descripción de la solución](#descripción-de-la-solución)
 3. [Cómo ejecutar el programa](#cómo-ejecutar-el-programa)
-4. [Video explicativo](#video-explicativo)
-5. [Coevaluación](#coevaluación)
+4. [Análisis de resultados](#análisis-de-resultados)
+5. [Video explicativo](#video-explicativo)
+6. [Coevaluación](#coevaluación)
 ## Descripción del problema
 ***
 a
 ## Descripción de la solución
 ***
 b
+## Análisis de resultados
+***
+c
 ## Cómo ejecutar el programa
 ***
 Para poder probar el código es necesario abrir como proyecto la carpeta ```Desafio 3``` en un compilador compatible con Python.
