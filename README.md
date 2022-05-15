@@ -16,8 +16,8 @@ Para la solución de este problema se implementaron dos redes neuronales de tipo
 * **Función de activación:** Sigmoide
 * **Capas de entrada**: 784
 * **Capas de salida**: 10
-* **Cantidad de capas ocultas: 3
-* **Cantidad de neuronas por capa oculta: 4-6-4
+* **Cantidad de capas ocultas: 3**
+* **Cantidad de neuronas por capa oculta: 4-6-4**
 
 ## Análisis de resultados
 ***
