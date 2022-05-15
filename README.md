@@ -13,7 +13,7 @@ Juan está interesado en el mercado de la venta de ropa en línea. Su revolucion
 El desafío planteado para la resolución de este problema es la implementación de una inteligencia artificial que haga el trabajo de clasificar la ropa.
 ## Descripción de la solución
 ***
-Para la solución de este problema se implementaron dos redes neuronales de tipo perceptrón multicapa, una con la librería Keras de Python y otra mediante una matriz de adyacencia. Dado que cada imagen es de 28x28 (784) pixeles y que existen 10 tipos de ropa para clasificar, se definió la siguiente cantidad de neuronas en las capas de entrada y salida, respectivamente:
+Para la solución de este problema se implementaron dos redes neuronales de tipo perceptrón multicapa, una con la librería Keras de Python y otra mediante una Matriz de Adyacencia. Dado que cada imagen es de 28x28 (784) pixeles y que existen 10 tipos de ropa para clasificar, se definió la siguiente cantidad de neuronas en las capas de entrada y salida, respectivamente:
 
 * **Cantidad de neuronas en capa de entrada:** 784
 * **Cantidad de neuronas en capa de salida:** 10
@@ -24,8 +24,9 @@ Por otro lado, a modo de poder realizar una comparación entre las dos formas de
 * **Cantidad de capas ocultas:** 3
 * **Cantidad de neuronas por capa oculta:** 4-6-4
 
-En cuanto al optimizador, se utilizó `SGD` para la red neuronal con matriz de adyacencia, con un `learning rate` de `0.0005`. En cambio, para la red neuronal con Keras, se hicieron pruebas adicionales variando entre los optimizadores `Adam` y `SDG`, además de probar cada uno con y sin especificar `learning rate` (el mismo establecido en la red neuronal con matriz de adyacencia), con el fin de obtener resultados variados y realizar comparaciones más especificas.
+En cuanto al optimizador, se utilizó `SGD` para la red neuronal implementada Matriz de Adyacencia, con un `learning rate` de `0.0005`. En cambio, para la red neuronal implementada con Keras, se hicieron pruebas adicionales variando entre los optimizadores `Adam` y `SDG`, además de probar cada uno con y sin especificar `learning rate` (de `0.0005`), con el fin de obtener resultados variados y realizar comparaciones más especificas.
 
+Por último, para el proceso de entrenamiento se decidió entrenar a las neuronas con una división de datos de entrenamiento y pruebas de 70/30. En aspectos de tiempo de entrenamiento, la red neuronal implementada con Keras se entrenó en 100 épocas (Epoch) y la red neuronal implementada con Matriz de Adyacencia se entrenó en 1000 iteraciones.
 ## Análisis de resultados
 ***
 c
@@ -38,6 +39,11 @@ Para poder probar el código es necesario abrir como proyecto la carpeta ```Desa
 * Pandas
 * Numpy
 * Matplotlib
+
+En el proyecto existen dos archivos en Python, los cuales corresponden a las redes neuronales implementadas con Keras y Matriz de Adyacencia, respectivamente:
+
+* keras.py
+* matriz.py
 
 ## Video explicativo
 ***
