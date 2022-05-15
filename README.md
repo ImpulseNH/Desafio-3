@@ -19,6 +19,8 @@ Para la solución de este problema se implementaron dos redes neuronales de tipo
 * **Cantidad de capas ocultas: 3**
 * **Cantidad de neuronas por capa oculta: 4-6-4**
 
+En cuanto al optimizador, se utilizó `SGD` para la red neuronal con matriz de adyacencia con un `learning rate` de `0.0005`. En cambio, para el caso de la red neuronal con Keras, se hicieron pruebas adicionales variando entre los optimizadores `Adam` y `SDG`, ambos con un `learning rate` de `0.0005`, con el fin de obtener resultados variados y realizar comparaciones más especificas.
+
 ## Análisis de resultados
 ***
 c
