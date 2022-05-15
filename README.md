@@ -8,7 +8,9 @@
 6. [Coevaluación](#coevaluación)
 ## Descripción del problema
 ***
-a
+Juan está interesado en el mercado de la venta de ropa en línea. Su revolucionaria idea implica usar una inteligencia artificial que recomiende ropa que se parezca. Para poder realizar esto, Juan deberá primero clasificar los tipos de ropa.
+
+El desafío planteado para la resolución de este problema es la implementación de una inteligencia artificial que haga el trabajo de clasificar la ropa.
 ## Descripción de la solución
 ***
 Para la solución de este problema se implementaron dos redes neuronales de tipo perceptrón multicapa, una con la librería Keras de Python y otra mediante una matriz de adyacencia. Dado que cada imagen es de 28x28 (784) pixeles y que existen 10 tipos de ropa para clasificar, se definió la siguiente cantidad de neuronas en las capas de entrada y salida, respectivamente:
