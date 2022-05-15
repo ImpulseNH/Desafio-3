@@ -11,15 +11,18 @@
 a
 ## Descripción de la solución
 ***
-Para la solución de este problema se implementaron dos redes neuronales de tipo perceptrón multicapa, una con la librería Keras de Python y otra mediante una matriz de adyacencia. A modo de poder realizar una comparación entre las dos formas de implementación, se definieron los siguientes parámetros en común:
+Para la solución de este problema se implementaron dos redes neuronales de tipo perceptrón multicapa, una con la librería Keras de Python y otra mediante una matriz de adyacencia. Dado que cada imagen es de 28x28 (784) pixeles y que existen 10 tipos de ropa para clasificar, se definió la siguiente cantidad de neuronas en las capas de entrada y salida, respectivamente:
+
+* **Cantidad de neuronas en capa de entrada: 784**
+* **Cantidad de neuronas en capa de salida: 10**
+
+Por otro lado, a modo de poder realizar una comparación entre las dos formas de implementación, se definieron los siguientes parámetros en común:
 
 * **Función de activación:** Sigmoide
-* **Capas de entrada**: 784
-* **Capas de salida**: 10
 * **Cantidad de capas ocultas: 3**
 * **Cantidad de neuronas por capa oculta: 4-6-4**
 
-En cuanto al optimizador, se utilizó `SGD` para la red neuronal con matriz de adyacencia con un `learning rate` de `0.0005`. En cambio, para el caso de la red neuronal con Keras, se hicieron pruebas adicionales variando entre los optimizadores `Adam` y `SDG`, ambos con un `learning rate` de `0.0005`, con el fin de obtener resultados variados y realizar comparaciones más especificas.
+En cuanto al optimizador, se utilizó `SGD` para la red neuronal con matriz de adyacencia con un `learning rate` de `0.0005`. En cambio, para el caso de la red neuronal con Keras, se hicieron pruebas adicionales variando entre los optimizadores `Adam` y `SDG`, además de probar cada uno con y sin `learning rate`, siendo `0.0005` el valor utilizado al especificarlo, con el fin de obtener resultados variados y realizar comparaciones más especificas.
 
 ## Análisis de resultados
 ***
