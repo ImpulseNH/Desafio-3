@@ -11,7 +11,14 @@
 a
 ## Descripción de la solución
 ***
-b
+Para la solución de este problema se implementaron dos redes neuronales de tipo perceptrón multicapa, una con la librería Keras de Python y otra mediante una matriz de adyacencia. A modo de poder realizar una comparación entre las dos formas de implementación, se definieron los siguientes parámetros en común:
+
+* **Función de activación:** Sigmoide
+* **Capas de entrada**: 784
+* **Capas de salida**: 10
+* **Cantidad de capas ocultas: 3
+* **Cantidad de neuronas por capa oculta: 4-6-4
+
 ## Análisis de resultados
 ***
 c
