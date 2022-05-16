@@ -10,7 +10,24 @@
 ***
 Juan está interesado en el mercado de la venta de ropa en línea. Su revolucionaria idea implica usar una inteligencia artificial que recomiende ropa que se parezca. Para poder realizar esto, Juan deberá primero clasificar los tipos de ropa.
 
-El desafío planteado para la resolución de este problema es la implementación de una inteligencia artificial que haga el trabajo de clasificar la ropa.
+La ropa a clasificar está contenida en un Dataset, en donde cada prenda está identificada por un `label` que va desde 0 a 9, por lo que en total se tienen 10 tipos de prendas a clasificar. Cada `label` corresponde a las siguientes prendas:
+
+```
+0 - Polera
+1 - Pantalón
+2 - sweater
+3 - Vestido
+4 - Saco
+5 - Sandalia
+6 - Camisa
+7 - Zapatilla
+8 - Bolso/cartera
+9 - Bota
+```
+
+Además, cada prenda está representada en una imagen de 28x28 píxeles, resultando en un vector de 784 píxeles por cada imagen de prenda. Cada pixel contiene un valor entre 0 y 1, siendo 0 completamente negro y 1 completamente blanco.
+
+A partir de esto, el desafío planteado para la resolución de este problema es la implementación de una inteligencia artificial que haga el trabajo de leer el Dataset y clasificar la ropa en los distintos tipos de prendas.
 ## Descripción de la solución
 ***
 Para la solución de este problema se implementaron dos redes neuronales de tipo perceptrón multicapa, una con la librería Keras de Python y otra mediante una Matriz de Adyacencia. Dado que cada imagen es de 28x28 (784) pixeles y que existen 10 tipos de ropa para clasificar, se definió la siguiente cantidad de neuronas en las capas de entrada y salida, respectivamente:
