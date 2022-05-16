@@ -50,7 +50,7 @@ En cuanto al optimizador, se utilizó `SGD` para la red neuronal implementada co
 Por último, para el proceso de entrenamiento se decidió dividir los datos en entrenamiento y pruebas de 70/30, y en aspectos de tiempo de entrenamiento, la red neuronal implementada con Keras se decidió entrenar en 100 épocas (Epoch), a diferencia de la red neuronal implementada con Matriz de Adyacencia que se decidió entrenar en 1000 iteraciones.
 ## Análisis de resultados
 ***
-Después de todas las pruebas realizadas según lo propuesto en la sección anterior, se obtuvieron varios resultados.
+Después de todas las pruebas realizadas según lo propuesto en la sección anterior, se obtuvieron los siguientes resultados:
 
 En primer lugar, se pudo observar que la red neuronal implementada con Keras obtuvo en general mejores resultados, dado que contenía en general una menor cantidad de falsos negativos y positivos para todos los tipos de prendas, demostrando una mejor precisión. Sin embargo, este resultado fue obtenido al entrenar la red con el optimizador `Adam`, ya que que al implementar el optimizador `SGD` los resultados fueron considerablemente menos precisos. Además, para obtener una buena calidad de resultados con Keras, se tuvo que dejar entrenando la red una mayor cantidad de tiempo, con un mínimo de 100 épocas (Epoch), que en promedio fueron de 5 a 6 minutos.
 
