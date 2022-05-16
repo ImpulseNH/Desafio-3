@@ -76,7 +76,7 @@ En el proyecto existen dos archivos en Python, los cuales corresponden a las red
 
 ## Video explicativo
 ***
-Para una mejor comprensión del problema y su resolución, se adjunta un video explicativo en el siguiente [link]().
+Para una mejor comprensión del problema y su resolución, se adjunta un video explicativo en el siguiente [link](https://youtu.be/UJqvVfw665k).
 ## Coevaluación
 ***
 A continuación, tablas de coevaluación según estos criterios: [Criterios de coevaluación](https://docs.google.com/document/d/1YSba-KNP-ReP_TJePQkCHXJ1x4_MtOizQPIrNnriZbw/edit#)
