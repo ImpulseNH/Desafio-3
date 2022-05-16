@@ -41,7 +41,9 @@ Por otro lado, a modo de poder realizar una comparación entre las dos formas de
 * **Cantidad de capas ocultas:** 3
 * **Cantidad de neuronas por capa oculta:** 4-6-4
 
-* **Topología final:** [784, 4, 6, 4, 10]
+Por lo tanto, para cada forma de implementación de la red neuronal, se tiene como topología:
+
+* **Topología:** [784, 4, 6, 4, 10]
 
 En cuanto al optimizador, se utilizó `SGD` para la red neuronal implementada Matriz de Adyacencia, con un `learning rate` de `0.0005`. En cambio, para la red neuronal implementada con Keras, se hicieron pruebas adicionales variando entre los optimizadores `Adam` y `SDG`, además de probar cada uno con y sin especificar `learning rate` (de `0.0005`), con el fin de obtener resultados variados y realizar comparaciones más especificas.
 
