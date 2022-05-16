@@ -41,6 +41,8 @@ Por otro lado, a modo de poder realizar una comparación entre las dos formas de
 * **Cantidad de capas ocultas:** 3
 * **Cantidad de neuronas por capa oculta:** 4-6-4
 
+* **Topología final:** [784, 4, 6, 4, 10]
+
 En cuanto al optimizador, se utilizó `SGD` para la red neuronal implementada Matriz de Adyacencia, con un `learning rate` de `0.0005`. En cambio, para la red neuronal implementada con Keras, se hicieron pruebas adicionales variando entre los optimizadores `Adam` y `SDG`, además de probar cada uno con y sin especificar `learning rate` (de `0.0005`), con el fin de obtener resultados variados y realizar comparaciones más especificas.
 
 Por último, para el proceso de entrenamiento se decidió dividir los datos en entrenamiento y pruebas de 70/30. En aspectos de tiempo de entrenamiento, la red neuronal implementada con Keras se entrenó en 100 épocas (Epoch) y la red neuronal implementada con Matriz de Adyacencia se entrenó en 1000 iteraciones.
@@ -73,7 +75,7 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 |                     | Esteban González | Carlos Núñez | Priscilla Riffo | Katherine Sepúlveda |
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
-| Carlos Núñez        | | | | |
+| Carlos Núñez        |X| |X|X|
 | Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
 2. **Integración**
@@ -81,7 +83,7 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 |                     | Esteban González | Carlos Núñez | Priscilla Riffo | Katherine Sepúlveda |
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
-| Carlos Núñez        | | | | |
+| Carlos Núñez        |X| |X|X|
 | Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
 3. **Responsabilidad**
@@ -89,7 +91,7 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 |                     | Esteban González | Carlos Núñez | Priscilla Riffo | Katherine Sepúlveda |
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
-| Carlos Núñez        | | | | |
+| Carlos Núñez        |X| |X|X|
 | Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
 4. **Contribución**
@@ -97,7 +99,7 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 |                     | Esteban González | Carlos Núñez | Priscilla Riffo | Katherine Sepúlveda |
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
-| Carlos Núñez        | | | | |
+| Carlos Núñez        |X| |X|X|
 | Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
 5. **Resolución de conflictos**
@@ -105,6 +107,6 @@ A continuación, tablas de coevaluación según estos criterios: [Criterios de c
 |                     | Esteban González | Carlos Núñez | Priscilla Riffo | Katherine Sepúlveda |
 | ------------------- | :--------------: | :----------: | :-------------: | :-----------------: |
 | Esteban González    | |X|X|X|
-| Carlos Núñez        | | | | |
+| Carlos Núñez        |X| |X|X|
 | Priscilla Riffo     |X|X| |X|
 | Katherine Sepúlveda | | | | |
