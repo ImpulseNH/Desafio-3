@@ -47,13 +47,23 @@ Por lo tanto, para cada forma de implementación de la red neuronal, se tiene co
 
 En cuanto al optimizador, se utilizó `SGD` para la red neuronal implementada con Matriz de Adyacencia, con un `learning rate` de `0.0005`. En cambio, para la red neuronal implementada con Keras, se hicieron pruebas adicionales variando entre los optimizadores `Adam` y `SDG`, además de probar cada uno con y sin especificar `learning rate` (de `0.0005`), con el fin de obtener resultados variados y realizar comparaciones más especificas.
 
-Por último, para el proceso de entrenamiento se decidió dividir los datos en entrenamiento y pruebas de 70/30, y en aspectos de tiempo de entrenamiento, la red neuronal implementada con Keras se entrenó en 100 épocas (Epoch), a diferencia de la red neuronal implementada con Matriz de Adyacencia se entrenó en 1000 iteraciones.
+Por último, para el proceso de entrenamiento se decidió dividir los datos en entrenamiento y pruebas de 70/30, y en aspectos de tiempo de entrenamiento, la red neuronal implementada con Keras se decidió entrenar en 100 épocas (Epoch), a diferencia de la red neuronal implementada con Matriz de Adyacencia que se decidió entrenar en 1000 iteraciones.
 ## Análisis de resultados
 ***
-c
+Después de todas las pruebas realizadas según lo propuesto en la sección anterior, se obtuvieron varios resultados.
+
+En primer lugar, se pudo observar que la red neuronal implementada con Keras obtuvo en general mejores resultados, dado que contenía en general una menor cantidad de falsos negativos y positivos para todos los tipos de prendas, demostrando una mejor precisión. Sin embargo, este resultado fue obtenido al entrenar la red con el optimizador `Adam`, ya que que al implementar el optimizador `SGD` los resultados fueron considerablemente menos precisos. Además, para obtener una buena calidad de resultados con Keras, se tuvo que dejar entrenando la red una mayor cantidad de tiempo, con un mínimo de 100 épocas (Epoch), que en promedio fueron de 5 a 6 minutos.
+
+Por otra parte, si bien la red neuronal implementada con Matriz de Adyacencia obtuvo resultados menos precisos (mayor cantidad de falsos negativos y positivos), su tiempo de ejecución era considerablemente menor, siendo en promedio la mitad del tiempo de entrenamiento necesario para obtener buenos resultados con la red neuronal implementada con Keras. El problema con la implementación de esta red, fue que su aprendizaje solo se observó durante la etapa inicial de entrenamiento, luego de un tiempo se estancaba en cierto punto. A modo de comprobar si la cantidad de iteraciones era un factor influyente, se realizaron pruebas exhaustivas con una cantidad de iteraciones mayor a 10.000, pero ocurría el mismo fenómeno y el aprendizaje no demostraba progreso, por lo que deducimos que los parámetros definidos (función de activación, learning rate y topología) para esta forma implementación de red neuronal no fueron los más adecuados para el problema de este desafío.
+
+En cuanto a los cambios de `learning rate` en la red neuronal implementada con Keras, no se logró obtener resultados mejores, por lo que se dejó sin especificar y se descartó realizar un análisis a este aspecto.
+
+Cabe mencionar que después de todas las comparaciones realizadas, se pudo identificar un detalle interesante que ambas redes neuronales tenían en común. Ambas redes mostraban dificultad para clasificar las prendas de tipo **Camisa**, **Sweater** y **Saco**, donde particularmente para la prenda **Camisa** se obtuvo una cantidad de falsos negativos similar a la cantidad de falsos positivos para la prenda **Saco**, lo que nos permitió deducir que la similitud entre esas prendas hacia difícil la tarea de clasificación para las redes neuronales.
+
+A partir del análisis realizado en esta sección, pudimos obtener como conclusión principal que
 ## Cómo ejecutar el programa
 ***
-Para poder probar el código es necesario abrir como proyecto la carpeta ```Desafio 3``` en un compilador compatible con Python. Además, se deben tener instaladas las siguientes librerías:
+Para poder probar el código es necesario abrir como proyecto la carpeta `Desafio 3` en un compilador compatible con Python. Además, se deben tener instaladas las siguientes librerías:
 * Keras
 * Sklearn
 * Seaborn
@@ -61,7 +71,7 @@ Para poder probar el código es necesario abrir como proyecto la carpeta ```Desa
 * Numpy
 * Matplotlib
 
-En el proyecto existen dos archivos en Python, los cuales corresponden a las redes neuronales implementadas con Keras y Matriz de Adyacencia, respectivamente:
+En el proyecto existen dos archivos en Python, los cuales corresponden a las redes neuronales implementadas con Keras y Matriz de Adyacencia, respectivamente. Estos son:
 
 * keras.py
 * matriz.py
