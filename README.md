@@ -58,7 +58,7 @@ Por otra parte, si bien la red neuronal implementada con Matriz de Adyacencia ob
 
 En cuanto a los cambios de `learning rate` en la red neuronal implementada con Keras, no se logró obtener resultados mejores, por lo que se dejó sin especificar y se descartó realizar un análisis a este aspecto.
 
-Cabe mencionar que después de todas las comparaciones realizadas, se pudo identificar un detalle interesante que ambas redes neuronales tenían en común. Ambas redes mostraban dificultad para clasificar las prendas de tipo **Camisa**, **Sweater** y **Saco**, donde particularmente para la prenda **Camisa** se obtuvo una cantidad de falsos negativos similar a la cantidad de falsos positivos para la prenda **Saco**, lo que nos permitió deducir que la similitud entre esas prendas hacia difícil la tarea de clasificación para las redes neuronales.
+Por último, cabe mencionar que después de analizar todas las comparaciones realizadas, se pudo identificar un detalle interesante que ambas redes neuronales tenían en común. Ambas redes mostraban dificultad para clasificar las prendas de tipo **Camisa**, **Sweater** y **Saco**, donde particularmente para la prenda **Camisa** se obtuvo una cantidad de falsos negativos similar a la cantidad de falsos positivos para la prenda **Saco**, lo que nos permitió deducir que la similitud entre esas prendas hacia difícil la tarea de clasificación.
 ## Cómo ejecutar el programa
 ***
 Para poder probar el código es necesario abrir como proyecto la carpeta `Desafio 3` en un compilador compatible con Python. Además, se deben tener instaladas las siguientes librerías:
